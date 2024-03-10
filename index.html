@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabbed Page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="tabs">
+    <button class="tablinks" onclick="openTab(event, 'aboutMe')" id="defaultOpen">About me</button>
+    <button class="tablinks" onclick="openTab(event, 'cv')">CV</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+</div>
+
+<div id="aboutMe" class="tabcontent">
+    <div class="container">
+        <div class="description">
+            <div class="education-block">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor's Degree in Computer Science</li>
+                    <li>University Name, Year of Graduation</li>
+                </ul>
+            </div>
+        
+            <div class="hard-skills-block">
+                <h2>Hard Skills</h2>
+                <ul>
+                    <li>Programming Languages: Java, Python, HTML/CSS, JavaScript</li>
+                    <li>Frameworks: React, Node.js, Django</li>
+                    <li>Database Management: SQL, MongoDB</li>
+                    <li>Version Control: Git</li>
+                </ul>
+            </div>
+        
+            <div class="languages-block">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English: Native proficiency</li>
+                    <li>French: Intermediate proficiency</li>
+                    <li>Spanish: Basic proficiency</li>
+                </ul>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="profile.jpg" alt="Photo">
+            <div class="caption">Your Caption Here</div>
+        </div>
+    </div>
+</div>
+
+
+<div id="cv" class="tabcontent">
+    <h2>CV</h2>
+    <p>This is my CV.</p>
+</div>
+
+<div id="projects" class="tabcontent">
+    <h2>Projects</h2>
+    <p>These are my projects.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
