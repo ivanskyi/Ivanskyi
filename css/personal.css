@@ -1,0 +1,11 @@
+.logo-text {
+    font-family: 'Hind', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background:#515769;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
