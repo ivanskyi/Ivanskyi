@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Oleh Ivanskyi - Java Developer & Project Manager</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Oleh Ivanskyi is a skilled Java Developer with 3 years of experience in software development and project management. Explore my projects and certifications." name="description"/>
+    <meta content="Oleh Ivanskyi, Java Developer, Project Manager, Software Development, IT Hillel" name="keywords"/>
+    <meta content="Oleh Ivanskyi" name="author"/>
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/personal.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        body {
+            font-family: 'Hind', sans-serif;
+        }
+
+        .profile-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin: 0 auto;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .skills-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .skills-heading, h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #515769;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            display: flex;
+            justify-content: flex-start; /* Aligns each item in the left column */
+        }
+
+        .skills-list li:nth-child(2n) {
+            justify-self: end; /* Aligns items in the second column to the right */
+        }
+
+
+
+        .skills-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skill-icon {
+            display: inline-block;
+            width: 56px;
+            height: 56px;
+            margin-right: 10px;
+        }
+
+        .skill-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .card .icon {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #515769;
+        }
+
+        .card .info {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .sep-line {
+            width: 100%;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 1rem 0;
+        }
+
+        footer a {
+            display: inline-block;
+            color: #515769;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .skills-heading, h2 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body id="body" data-spy="scroll" data-target=".header">
+<header class="header navbar-fixed-top">
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="menu-container js_nav-item">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="toggle-icon"></span>
+                </button>
+                <div class="logo">
+                    <a class="logo-wrap" href="#body" style="text-decoration: none;">
+                        <span class="logo-text">Ivanskyi</span>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse nav-collapse">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav navbar-nav-right">
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="about">
+    <div class="container content-lg">
+        <div class="row">
+            <div class="col-sm-5 sm-margin-b-60">
+                <div class="profile-card">
+                    <img class="profile-image animate-fade-in" src="img/dev.png" alt="Oleh Ivanskyi - Java Developer and Project Manager">
+                    <h2>About Me</h2>
+                    <div class="sep-line"></div>
+                    <p>I'm a Java Developer and Project Manager with 3 years of commercial experience in software development. I am driven to collaborate with teams and enhance efficiency to ensure project success.</p>
+                    <p>I have the skills to convert complex objectives into clear, actionable plans, optimizing both development and project management processes.</p>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="margin-b-10">
+                    <div class="skills-container">
+                        <h3 class="skills-heading">SKILLS</h3>
+                        <div class="sep-line"></div>
+                        <ul class="skills-list">
+                            <li><span class="skill-icon"><img src="img/icon/java.png" alt="Java Icon"></span> Java Development</li>
+                            <li><span class="skill-icon"><img src="img/icon/pm.png" alt="PM Icon"></span> Project Management</li>
+                            <li><span class="skill-icon"><img src="img/icon/spring-boot.png" alt="Spring Icon"></span> Spring Framework</li>
+                            <li><span class="skill-icon"><img src="img/icon/agile.png" alt="Agile Icon"></span> Agile Methodologies</li>
+                            <li><span class="skill-icon"><img src="img/icon/angular.png" alt="API Icon"></span>Angular</li>
+                            <li><span class="skill-icon"><img src="img/icon/db.png" alt="Leadership Icon"></span>SQL/NoSQL Databases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="margin-b-50">
+                    <div class="row">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="icon"><i class="fab fa-github"></i></div>
+                                <div class="info"><a href="https://github.com/ivanskyi" target="_blank">github.com/ivanskyi</a></div>
+                            </div>
+                            <div class="card">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="info"><a href="mailto:olehivanskyi@gmail.com">olehivanskyi@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>My Courses</h2>
+                <div class="sep-line"></div>
+                <ul>
+                    <li><strong>Certificate from IT Hillel:</strong>
+                        <p>This certificate is awarded for completing the Project Manager course, showcasing my expertise in managing projects effectively.</p>
+                        <a href="https://certificate.ithillel.ua/view/70138124" target="_blank">View Certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; All rights reserved</p>
+    <a href="files/privacy-policy.txt" download="Privacy_Policy">Privacy Policy</a>
+</footer>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/swiper/js/swiper.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

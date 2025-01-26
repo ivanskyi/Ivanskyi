@@ -1,0 +1,46 @@
+.logo-text {
+    font-family: 'Hind', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #515769;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 2rem;
+    }
+
+    .btn-theme {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+    .progress-box h5 {
+        font-size: 1rem;
+    }
+
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-sm-5, .col-sm-7 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .progress-box h5 {
+        font-size: 0.9rem;
+    }
+}
